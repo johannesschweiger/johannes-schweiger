@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Johannes Schweiger – Für unseren Landkreis. Für uns alle.</title>
+  <meta name="description" content="Johannes Schweiger – Kandidat für den Kreistag Landsberg am Lech. Für unseren Landkreis. Für uns alle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #334155;
+      --primary: #0b5bd3;
+      --secondary: #f1f5f9;
+      --radius: 14px;
+      --max: 980px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header {
+      background: linear-gradient(135deg, #0b5bd3 0%, #003b8e 100%);
+      color: #fff;
+      padding: 64px 20px 52px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
+    header p { margin: 0; font-size: clamp(16px, 2.5vw, 20px); opacity: 0.95; }
+    .container { max-width: var(--max); margin: 40px auto; padding: 0 20px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+    @media (min-width: 880px) { .grid { grid-template-columns: 1.2fr 2fr; } }
+    .card { background: var(--secondary); padding: 22px; border-radius: var(--radius); border: 1px solid #e2e8f0; }
+    h2 { margin: 0 0 8px; color: var(--primary); font-size: 22px; }
+    p.lead { color: var(--muted); margin-top: 4px; }
+    .avatar { width: 180px; height: 180px; border-radius: 999px; background: #cbd5e1 url('./assets/portrait-placeholder.svg') center/60% no-repeat; margin: 0 auto 12px; border: 4px solid #ffffff20; box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
+    .btn { display: inline-block; background: var(--primary); color: #fff; padding: 12px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; margin-right: 10px; }
+    .btn.ghost { background: #fff; color: var(--primary); border: 2px solid var(--primary); }
+    ul.clean { margin: 8px 0 0; padding-left: 18px; }
+    ul.clean li { margin: 6px 0; }
+    .pill { display: inline-block; padding: 6px 10px; background: #e2e8f0; color: #0f172a; border-radius: 999px; font-size: 13px; margin: 4px 6px 0 0; }
+    .flex { display: flex; gap: 12px; flex-wrap: wrap; }
+    .section-title { font-size: 18px; font-weight: 700; color: var(--muted); margin: 28px 0 10px; }
+    footer { margin-top: 36px; background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 22px; font-size: 14px; color: #475569; }
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Für unseren Landkreis. Für uns alle.</h1>
+    <p>Johannes Schweiger – Kandidat für den Kreistag Landsberg am Lech</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <aside class="card">
+        <div class="avatar" aria-label="Profilfoto Platzhalter"></div>
+        <h2>Über mich</h2>
+        <p class="lead">Familienpolitisch engagiert, bodenständig und nah an den Menschen im Landkreis Landsberg. Ich setze mich ein für starke Familien, verlässliche Infrastruktur und ein Miteinander, das unseren Landkreis lebenswert hält.</p>
+        <div class="section-title">Kontakt</div>
+        <p>E-Mail: <a href="mailto:info@example.de">info@example.de</a><br/>
+        Instagram: <a href="https://instagram.com/USERNAME" target="_blank">@USERNAME</a></p>
+        <div class="flex">
+          <a class="btn" href="https://instagram.com/USERNAME" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn ghost" href="#kontakt">Schreiben</a>
+        </div>
+      </aside>
+
+      <section class="card">
+        <h2>Wofür ich stehe</h2>
+        <ul class="clean">
+          <li>Mehr Treffpunkte & Angebote für Jugendliche</li>
+          <li>Starke Familien und gute Betreuung</li>
+          <li>Unterstützung für Vereine & Ehrenamt</li>
+          <li>Sichere Wege und gute Mobilität</li>
+          <li>Bezahlbarer Wohnraum</li>
+          <li>Landwirtschaft wertschätzen & unterstützen</li>
+        </ul>
+
+        <div class="section-title">Unterwegs im Landkreis</div>
+        <p>Aktuelle Eindrücke, kurze Videos und Umfragen: <strong>Folge mir auf Instagram</strong> – ich freue mich auf den Austausch!</p>
+        <div class="flex">
+          <span class="pill">Finning</span>
+          <span class="pill">Landsberg am Lech</span>
+          <span class="pill">Kaufering</span>
+          <span class="pill">Dießen</span>
+          <span class="pill">Utting</span>
+          <span class="pill">Schondorf</span>
+          <span class="pill">Penzing</span>
+        </div>
+
+        <div class="section-title" id="kontakt">Schreiben Sie mir</div>
+        <p>Kurz & einfach: <a href="mailto:info@example.de">info@example.de</a> – ich melde mich.</p>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div style="max-width:980px;margin:0 auto;">
+      <div><strong>Impressum & Datenschutz</strong> – Platzhalter. Bitte mit deinen Angaben ersetzen (Name/Adresse/Verantwortlicher gem. § 5 TMG / § 18 Abs. 2 MStV).</div>
+      <div style="margin-top:8px;">© <span id="year"></span> Johannes Schweiger</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
